@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLACE</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+
+    <div class="tudo">
+
+
+        <div class="comeco">
+
+            <div class="logo">
+                <img src="fotos.jpeg/iplace-logo.png" alt="" width="200" height="100">
+            </div>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar mais produtos" />
+
+            </div>
+        </div>
+
+
+
+
+        <div class="produtos">
+            <div class="card">
+                <img src="fotos.jpeg/iphone15plus.jpeg" alt="" width="300" height="200">
+                <h2>IPHONE 15 PLUS</h2>
+                <p>R$ 6.199,00</p>
+                <button onclick="toggleDetails(this)">Mais dados...</button>
+                <div class="additional-info" style="display: none;">
+                    <p>Informações adicionais sobre o iPhone 15 Plus.</p>
+                    <div class="botao">
+                        <button class="voltar">voltar</button>
+                        <button class="comprar">comprar</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <img src="fotos.jpeg/iphone14mini.jpeg" alt="" width="300" height="200">
+                <h2>IPHONE 14 MINI</h2>
+                <p>R$4.199,00</p>
+                <button onclick="toggleDetails(this)">Mais dados...</button>
+                <div class="additional-info" style="display: none;">
+                    <p>Informações adicionais sobre o iPhone 15 Plus.</p>
+                    <div class="botao">
+                        <button class="voltar">voltar</button>
+                        <button class="comprar">comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fotos.jpeg/iphone13.jpeg" alt="" width="300" height="200">
+                <h2>IPHONE 13</h2>
+                <p>R$3.799,00</p>
+                <button onclick="toggleDetails(this)">Mais dados...</button>
+                <div class="additional-info" style="display: none;">
+                    <p>Informações adicionais sobre o iPhone 15 Plus.</p>
+                    <div class="botao">
+                        <button onclick="toggleDetails(this.closest('.additional-info').previousElementSibling)"
+                            class="voltar">voltar</button>
+                        <!--
+                            <button onclick="location.href='cadastro.html'" class="comprar">comprar</button> 
+                        <a href="./cadastro.html">comprar</a>
+                        -->
+                        
+                        <a href="./cadastro.html">
+                            <button class="comprar">comprar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="fotos.jpeg/iphone12pro.jpeg" alt="" width="300" height="200">
+                <h2>IPHONE 12 PRO</h2>
+                <p>R$2.799,00</p>
+                <button onclick="toggleDetails(this)">Mais dados...</button>
+
+
+                <div class="additional-info" style="display: none;">
+                    <p>Informações adicionais sobre o iPhone 15 Plus.</p>
+                    <div class="botao">
+                        <button class="voltar">voltar</button>
+                        <button class="comprar">comprar</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<script> function toggleDetails(button) {
+        const info = button.nextElementSibling; // Obtém a próxima div (informações adicionais)
+
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block'; // Mostra as informações
+            button.textContent = 'Ocultar Informações'; // Altera o texto do botão
+        } else {
+            info.style.display = 'none'; // Esconde as informações
+            button.textContent = 'Mais dados...'; // Restaura o texto do botão
+        }
+    }
+
+</script>

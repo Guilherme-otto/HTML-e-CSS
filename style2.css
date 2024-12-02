@@ -1,0 +1,125 @@
+
+
+.tudo{
+background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.produtos{
+	text-align: center;
+	background-color: black;
+}
+
+
+
+.card {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	
+}
+
+.card1 {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+.card2 {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.card3 {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.comeco{
+	display: flex;
+}
+
+.logo {
+	margin: 150px;
+
+}
+
+#divBusca{
+	background-color:#e7e7e7;
+	border:solid 1px;
+	border-radius:300px;
+	width:700px;
+	display: inline-block;
+	padding: 5px;
+	margin: 220px;
+}
+
+  #txtBusca{
+	float:left;
+	background-color:transparent;
+	padding-left:5px;
+	font-style:italic;
+	font-size:18px;
+	border:none;
+	height:20x;
+	width:700px;
+}
+
+.card-back {
+    display: none; /* Initially hide the card back */
+	background-color: blue;
+}
+
+
+.additional-info {
+	inset: 0;
+	position: absolute;
+	background: white;
+	border-radius: inherit;
+
+}
+.botao{
+	position: relative;
+	top: 280px;
+   
+.comprar {
+	background-color: green;
+  
+}
